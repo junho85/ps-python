@@ -24,11 +24,10 @@ class Solution:
             return nums[0]
 
         result = 0
-        for i in range(len(nums)):
-            for j in range(len(nums)):
-                tmp = sum(nums[i:j + 1])
-                if tmp > result:
-                    result = tmp
+        tmp = 0
+        for num in nums:
+            tmp = max(0, tmp + num)
+            result = max(result, tmp)
 
         return result
 
