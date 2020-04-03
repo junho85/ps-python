@@ -1,8 +1,10 @@
 # google code jam 2019
+* [Foregone Solution](https://codingcompetitions.withgoogle.com/codejam/round/0000000000051705/0000000000088231)
 
 ## 1
 ```
 cat 1.txt| python 1_foregone_solution.py
+cat 1.txt| python 1_foregone_solution_brute_force.py
 ```
 
 ## 2
