@@ -1,6 +1,7 @@
 # 2020 Google Code Jam
 
 ```
+python 1_vestigium.py < 1.txt
 python 3_parenting_partnering_returns.py < 3.txt
 python 3_parenting_partnering_returns_4_WA.py < 3.txt
 python 5_indicium.py < 5.txt
