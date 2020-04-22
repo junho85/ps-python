@@ -1,13 +1,15 @@
-# Kadane's Algorithm
+# Brute Force
+# Time Limit Exceeded
 class Solution:
     def maxSubArray(self, nums):
-        tmp = nums[0]
         result = nums[0]
-
-        for num in nums[1:]:
-            tmp = max(tmp + num, num)
+        len_num = len(nums)
+        for i in range(len_num):
+            tmp = nums[i]
             result = max(tmp, result)
-
+            for j in range(i+1, len_num):
+                tmp += nums[j]
+                result = max(tmp, result)
         return result
 
 
