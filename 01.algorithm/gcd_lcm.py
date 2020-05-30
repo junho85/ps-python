@@ -9,11 +9,13 @@ def gcd_my(a, b):
     else:
         return gcd_my(b, a % b)
 
+
 # 유클리드호제법 while loop
 def gcd_my2(a, b):
     while b != 0:
         (a, b) = (b, a % b)
     return a
+
 
 # 배열의 최대공약수
 def gcd_array(arr):
