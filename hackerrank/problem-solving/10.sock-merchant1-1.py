@@ -8,18 +8,18 @@ import sys
 
 # Complete the sockMerchant function below.
 def sockMerchant(n, ar):
-    cn = {}
+    socks = {}
     for a in ar:
-        if a in cn:
-            cn[a] += 1
+        if a in socks:
+            socks[a] += 1
         else:
-            cn[a] = 1
+            socks[a] = 1
 
-    temp = []
-    for x in cn.values():
-        temp.append(int(x/2))
+    pairs = []
+    for x in socks.values():
+        pairs.append(int(x/2))
 
-    return sum(temp)
+    return sum(pairs)
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
