@@ -1,12 +1,26 @@
 from itertools import combinations
 
+# [(1, 2), (1, 3), (1, 4), (1, 5), (1, 6),
+# (2, 3), (2, 4), (2, 5), (2, 6),
+# (3, 4), (3, 5), (3, 6),
+# (4, 5), (4, 6),
+# (5, 6)]
+print(list(combinations([1, 2, 3, 4, 5, 6], 2)))
+
+# [(1, 2, 3), (1, 2, 4), (1, 3, 4), (2, 3, 4)]
+print(list(combinations([1, 2, 3, 4], 3)))
+
+
+
+
+
 print(list(combinations([1,2,3], 2)))
 
 
 comb = list(combinations(["(", "(", ")", ")"], 4))
 print(comb)
 
-arr = [1,2,3]
+arr = [1,2,3,4,5,6]
 print(list(combinations(arr, 2)))
 
 def comb2(arr):
@@ -29,8 +43,3 @@ def my_combination2(arr):
 
 print("===my_combination2===")
 print(my_combination2(arr))
-
-print("===combinations===")
-print(list(combinations(arr, 3)))
-
-

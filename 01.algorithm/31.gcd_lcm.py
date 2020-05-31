@@ -1,5 +1,11 @@
 from math import gcd
 
+print(gcd(4, 6)) # 2
+print(gcd(16, 32)) # 16
+
+
+
+
 # 최대공약수 직접 구현
 
 # 유클리드호제법 recursive
@@ -31,7 +37,7 @@ def gcd_array(arr):
 def lcm(a, b):
     return int(a * b / gcd(a, b))
 
-# 배열의 최소공배수
+# 배열의 최소공배수저
 def lcm_array(arr):
     lcm_arr = None
     for i in range(len(arr)):
