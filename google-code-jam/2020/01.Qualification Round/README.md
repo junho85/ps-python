@@ -1,4 +1,4 @@
-# 2020 Google Code Jam
+# 2020 Google Code Jam Qualification Round
 
 ```
 python 1_vestigium.py < 1.txt
